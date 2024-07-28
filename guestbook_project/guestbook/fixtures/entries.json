@@ -1,0 +1,52 @@
+[
+    {
+        "model": "guestbook.entry",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "subject": "subject_1",
+            "message": "message_1",
+            "created_date": "2023-07-10T15:00:00Z"
+        }
+    },
+    {
+        "model": "guestbook.entry",
+        "pk": 2,
+        "fields": {
+            "user": 1,
+            "subject": "subject_2",
+            "message": "message_2",
+            "created_date": "2023-07-10T16:00:00Z"
+        }
+    },
+    {
+        "model": "guestbook.entry",
+        "pk": 3,
+        "fields": {
+            "user": 2,
+            "subject": "subject_3",
+            "message": "message_3",
+            "created_date": "2023-07-11T11:00:00Z"
+        }
+    },
+    {
+        "model": "guestbook.entry",
+        "pk": 4,
+        "fields": {
+            "user": 3,
+            "subject": "subject_4",
+            "message": "message_4",
+            "created_date": "2023-07-12T09:00:00Z"
+        }
+    },
+    {
+        "model": "guestbook.entry",
+        "pk": 5,
+        "fields": {
+            "user": 2,
+            "subject": "subject_9",
+            "message": "message_9",
+            "created_date": "2023-07-11T12:00:00Z"
+        }
+    }
+]

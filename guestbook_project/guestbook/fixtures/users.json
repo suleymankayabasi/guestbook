@@ -1,0 +1,26 @@
+[
+    {
+        "model": "guestbook.user",
+        "pk": 1,
+        "fields": {
+            "name": "user_1",
+            "created_date": "2023-07-10T14:48:00Z"
+        }
+    },
+    {
+        "model": "guestbook.user",
+        "pk": 2,
+        "fields": {
+            "name": "user_2",
+            "created_date": "2023-07-11T10:30:00Z"
+        }
+    },
+    {
+        "model": "guestbook.user",
+        "pk": 3,
+        "fields": {
+            "name": "user_3",
+            "created_date": "2023-07-12T08:15:00Z"
+        }
+    }
+]

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db-host:
+    container_name: db-host
+    image: postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: guestbook_db
+      POSTGRES_USER: guestbook
+      POSTGRES_PASSWORD: guestbook
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U guestbook"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+  guestbook: 
+    container_name: guestbook
+    environment:
+      - PG_HOST=db-host
+    depends_on:
+      db-host:
+        condition: service_healthy    
+    build: .
+    ports:
+      - "8000:8000"
+
+
+
+
